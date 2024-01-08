@@ -1,11 +1,9 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+﻿using System.Windows;
+
 
 namespace baseClicker_game
 {
+    
     internal class Game
     {
         private string _playername;
@@ -19,14 +17,11 @@ namespace baseClicker_game
             _playername = name;
         }
 
-        void start(Game game)
+        [STAThread]
+        internal void Start()
         {
-            while (true)
-            {
-                Console.Clear();
-                Console.SetCursorPosition(0,3);
-                Console.WriteLine($"Score: {_score}");
-            }
+            Application app = new Application();
+            app.Run(new ClickerWindow.MainWindow());
         }
     }
 
