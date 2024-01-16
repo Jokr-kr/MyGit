@@ -1,0 +1,35 @@
+﻿<Page x:Class="GameCenter_WPF.Pages.ClickerGame"
+      xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+      xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+      xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+      xmlns:local="clr-namespace:GameCenter_WPF.Pages"
+      mc:Ignorable="d" 
+      d:DesignHeight="850" Width="1500"
+      Title="ClickerGame">
+
+    <Grid Name="MainGrid" MouseLeftButtonDown="OnPageClick">
+        <Grid.Background>
+            <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
+                <GradientStop Color="#FF1D092F" Offset="0.173"/>
+                <GradientStop Color="#FF041456" Offset="1"/>
+                <GradientStop Color="#FF0D2647" Offset="0.677"/>
+                <GradientStop Color="#FF380F6D" Offset="0.423"/>
+            </LinearGradientBrush>
+        </Grid.Background>
+        <Button Content="Menu" Click="Menu" VerticalAlignment="Top" HorizontalAlignment="Left" Height="50" Width="100"/>
+        <Label Name="ScoreLabel" HorizontalAlignment="Left" VerticalAlignment="Top" Height="96" Width="360" FontSize="34" Foreground="#FFE4DADA" Margin="682,349,0,0"/>
+        <Label Name="TotalClicksLabel" HorizontalAlignment="Left" Margin="237,35,0,0" VerticalAlignment="Top" Width="57" Foreground="#FFD6D6D6"/>
+        <Label Content="Total Clicks:" HorizontalAlignment="Left" Margin="161,34,0,0" VerticalAlignment="Top" Foreground="#FFEAD9D9"/>
+        <Label Content="score:" HorizontalAlignment="Left" Margin="580,349,0,0" VerticalAlignment="Top" Height="63" Width="97" FontSize="28" Foreground="#FFFBF6F6"/>
+        <Label Content="Cost" HorizontalAlignment="Left" Margin="811,216,0,0" VerticalAlignment="Top" Foreground="#FFF7F7F7"/>
+
+        <Button Click="Buy_increase" Content="Increase Power" HorizontalAlignment="Left" Margin="682,238,0,0" VerticalAlignment="Top" Height="50" Width="100" RenderTransformOrigin="0.743,0.46"/>
+        <Label x:Name="IncreasePrice" Content="increase cost" HorizontalAlignment="Left" Margin="801,250,0,0" VerticalAlignment="Top" Foreground="#FFF7F7F7"/>
+        <Label Name="IncreaseAmount" Content="increase" HorizontalAlignment="Left" Margin="705,294,0,0" VerticalAlignment="Top" Foreground="#FFF7F7F7"/>
+
+        <Button Click="Upgrade_increase" Content="Higher increase" HorizontalAlignment="Left" Margin="682,522,0,0" VerticalAlignment="Top" Height="50" Width="100"/>
+        <Label x:Name="MoreCost" Content="More cost" HorizontalAlignment="Left" Margin="801,534,0,0" VerticalAlignment="Top" Foreground="#FFF7F7F7"/>
+        <Label x:Name="moreincrease" Content="More" HorizontalAlignment="Left" Margin="712,572,0,0" VerticalAlignment="Top" Foreground="#FFF7F7F7"/>
+    </Grid>
+</Page>

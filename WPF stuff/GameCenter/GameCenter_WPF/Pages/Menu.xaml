@@ -1,0 +1,43 @@
+﻿<Page x:Class="GameCenter_WPF.Pages.Menu"
+          xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+          xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+          xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+          xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+          xmlns:local="clr-namespace:GameCenter_WPF.Pages"
+          mc:Ignorable="d" 
+          d:DesignHeight="850" Width="1500">
+
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="80"/>
+            <RowDefinition Height="*"/>
+            <RowDefinition Height="*"/>
+            <RowDefinition Height="*"/>
+            <RowDefinition Height="*"/>
+            <RowDefinition Height="*"/>
+            <RowDefinition Height="*"/>
+            <RowDefinition Height="*"/>
+            <RowDefinition Height="*"/>
+        </Grid.RowDefinitions>
+
+
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="*"/>
+            <ColumnDefinition Width="*"/>
+            <ColumnDefinition Width="*"/>
+            <ColumnDefinition Width="*"/>
+            <ColumnDefinition Width="*"/>
+            <ColumnDefinition Width="*"/>
+            <ColumnDefinition Width="*"/>
+            <ColumnDefinition Width="*"/>
+            <ColumnDefinition Width="*"/>
+        </Grid.ColumnDefinitions>
+
+        <Button Grid.Column="4" Grid.Row="2" Click="NewGamebtn" FontSize="24" Content="New Game"  Width="150" Height="60"/>
+        <Button Grid.Column="4" Grid.Row="3" Click="Loadbtn" FontSize="24" Content="Load"  Width="130" Height="60"/>
+        <Button Grid.Column="4" Grid.Row="4" Click="Settingsbtn" FontSize="24" Content="Settings" Width="110" Height="60" />
+        <Button Grid.Column="4" Grid.Row="5" Click="QuitBtn" Content="Quit" FontSize="24" Width="90" Height="60"/>
+
+    </Grid>
+</Page>
+
