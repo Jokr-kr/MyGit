@@ -102,13 +102,10 @@ namespace GameCenter_WPF.Pages
             {
                 return (int)Math.Ceiling(_increase_Price * _increase_CostIncrease);
             }
-            if (choice == 2)
+            else
             {
                 return (int)Math.Ceiling(_more_Price * _More_CostIncrease);
             }
-            
-            return 1;
         }
-
     }
 }
