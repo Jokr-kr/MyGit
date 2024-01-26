@@ -7,12 +7,10 @@ namespace GameCenter_WPF
     {
         [STAThread]
         public static void Main(string[] args)
-        
         {
             var app = new Application();
             var window = new MainWindow();
             app.Run(window);
-
         }
     }
 }

@@ -14,11 +14,9 @@ namespace GameCenter_WPF
     {
         public MainWindow()
         {
-           
             InitializeComponent();
             PageSelector("menu");
         }
-
 
         internal void PageSelector(string page)
         {
@@ -37,6 +35,8 @@ namespace GameCenter_WPF
 
             MainFrame.Navigate(result);
         }
+
+
         //internal void Menu()
         //{
         //    MainFrame.Navigate(new Menu(this));

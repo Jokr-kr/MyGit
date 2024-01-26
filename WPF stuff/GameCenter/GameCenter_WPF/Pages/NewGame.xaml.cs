@@ -28,5 +28,10 @@ namespace GameCenter_WPF.Pages
         {
            GoTo.PageSelector("menu");
         }
+
+        private void ListBox_SelectionChanged(object sender, SelectionChangedEventArgs e)
+        {
+
+        }
     }
 }

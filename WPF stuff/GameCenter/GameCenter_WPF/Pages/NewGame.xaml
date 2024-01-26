@@ -3,13 +3,13 @@
       xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
       xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
       xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
-    
       mc:Ignorable="d" 
       d:DesignHeight="850" Width="1500"
       Title="NewGame">
 
     <Grid>
         <Button Content="Menu" Click="Menu" VerticalAlignment="Top" HorizontalAlignment="Left" Height="50" Width="100"/>
-        <Button Click="GameStart" Content="Button" HorizontalAlignment="Center" Margin="0,197,0,0" VerticalAlignment="Top" Height="160" Width="292"/>
+        <Button Click="GameStart" Content="New game" HorizontalAlignment="Center" Margin="0,611,0,0" VerticalAlignment="Top" Height="50" Width="100"/>
+        <ListBox d:ItemsSource="{d:SampleData ItemCount=5}" Width="500" Height="400" Background="White" Margin="500,33,500,417"/>
     </Grid>
 </Page>
